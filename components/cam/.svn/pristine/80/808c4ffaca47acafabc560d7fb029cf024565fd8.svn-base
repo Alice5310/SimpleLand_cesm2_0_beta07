@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<namelist_defaults>
+
+<start_ymd>00010101</start_ymd>
+
+<ncdata dyn="fv" hgrid="0.9x1.25">atm/cam/inic/fv/b.e15.B1850G.f09_g16.pi_control.25.cam.i.0041-01-01-00000_chem_c160602.nc</ncdata>
+<ncdata dyn="fv" hgrid="1.9x2.5" >atm/cam/inic/fv/fgeos5.cesm1_5_alpha02d_mam4vbs.FSTRATVBSL45.19.19.chemV2.vbs.cam.i.2006.32L_c160314.nc</ncdata>
+
+<solar_data_file>atm/cam/solar/SOLAR_SPECTRAL_Lean_1610-2008_annual_c090324.nc</solar_data_file>
+<solar_data_type>'FIXED'</solar_data_type>
+<solar_data_ymd>18500101</solar_data_ymd>
+
+<srf_emis_specifier>
+  'CH2O     -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_CH2O_surface_1850-2100_1.9x2.5_c130806.nc',
+  'CO       -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_CO_surface_woBiog_1850-2100_1.9x2.5_c130806.nc',
+  'NO       -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_NO_surface_1850-2100_1.9x2.5_c150529.nc',
+  'BIGALK   -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_BIGALK_surface_1850-2100_1.9x2.5_c130814.nc',
+  'BIGENE   -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_BIGENE_surface_1850-2100_1.9x2.5_c130814.nc',
+  'C2H2     -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_C2H2_surface_1850-2100_1.9x2.5_c130814.nc',
+  'C2H4     -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_C2H4_surface_woBiog_1850-2100_1.9x2.5_c130814.nc',
+  'C2H5OH   -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_C2H5OH_surface_1850-2100_1.9x2.5_c130814.nc',
+  'C2H6     -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_C2H6_surface_woBiog_1850-2100_1.9x2.5_c130814.nc',
+  'C3H6     -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_C3H6_surface_woBiog_1850-2100_1.9x2.5_c130814.nc',
+  'C3H8     -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_C3H8_surface_woBiog_1850-2100_1.9x2.5_c130814.nc',
+  'CH3CHO   -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_CH3CHO_surface_1850-2100_1.9x2.5_c130814.nc',
+  'CH3OH    -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_CH3OH_surface_woBiog_1850-2100_1.9x2.5_c130814.nc',
+  'MEK      -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_MEK_surface_1850-2100_1.9x2.5_c130814.nc',
+  'TOLUENE  -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_TOLUENE_surface_1850-2100_1.9x2.5_c141106.nc',
+  'XYLENES  -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_XYLENE_surface_1850-2100_1.9x2.5_c130903.nc',
+  'BENZENE  -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_BENZENE_surface_1850-2100_1.9x2.5_c130903.nc',
+  'HCN      -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_HCN_surface_1850-2100_1.9x2.5_c130814.nc',
+  'CH3CN    -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_CH3CN_surface_1850-2100_1.9x2.5_c130814.nc',
+  'CH3COCH3 -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_CH3COCH3_surface_woBiog_1850-2100_1.9x2.5_c130814.nc',
+  'CH3COOH  -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_CH3COOH_surface_1850-2100_1.9x2.5_c130814.nc',
+  'HCOOH    -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_HCOOH_surface_1850-2100_1.9x2.5_c130814.nc',
+  'DMS      -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_DMS_surface_1850-2100_1.9x2.5_c141106.nc',
+  'SO2      -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_SO2_surface_1850-2100_1.9x2.5_c141106.nc',
+  'bc_a4    -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_bc_surf_1850-2005_c090804.nc',
+  'num_a1   -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam4_num_a1_surf_1850-2005_c150205.nc',
+  'num_a2   -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_num_a2_surf_1850-2005_c090804.nc',
+  'num_a4   -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam4_num_a4_surf_1850-2005_c150205.nc',
+  'pom_a4   -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_pom_surf_1850-2005_c130424.nc',
+  'so4_a1   -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a1_surf_1850-2005_c090804.nc',
+  'so4_a2   -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a2_surf_1850-2005_c090804.nc'
+  'IVOCbb   -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_IVOCbb_surface_1850-2100_1.9x2.5_c160315.nc',
+  'IVOCff   -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1950_2100_rcp6/IPCC_emissions_IVOCff_surface_1850-2100_1.9x2.5_c160315.nc',
+  'SVOCff   -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_SVOCff_surf_1850-2005_c160315.nc'
+</srf_emis_specifier>
+<srf_emis_cycle_yr>1850</srf_emis_cycle_yr>
+<srf_emis_type>CYCLICAL</srf_emis_type>
+
+<ext_frc_specifier>
+  'SO2    -> $INPUTDATA_ROOT/atm/cam/chem/emis/ccmi_1960-2008/IPCC_emissions_volc_SO2_1850-2100_1.9x2.5_c130426cycle.nc',
+  'bc_a4  -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_bc_elev_1850-2005_c090804.nc',
+  'num_a1 -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam4_num_a1_elev_1850-2005_c150205.nc',
+  'num_a2 -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_num_a2_elev_1850-2005_c090804.nc',
+  'num_a4 -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam4_num_a4_elev_1850-2005_c150205.nc',
+  'pom_a4 -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_pom_elev_1850-2005_c130424.nc',
+  'so4_a1 -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a1_elev_1850-2005_c090804.nc',
+  'so4_a2 -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a2_elev_1850-2005_c090804.nc'
+  'SVOCbb -> $INPUTDATA_ROOT/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_SVOCbb_elev_1850-2005_c160315.nc'
+</ext_frc_specifier>
+<ext_frc_cycle_yr>1850</ext_frc_cycle_yr>
+<ext_frc_type>CYCLICAL</ext_frc_type>
+
+<flbc_type>CYCLICAL</flbc_type>
+<flbc_cycle_yr>1850</flbc_cycle_yr>
+
+<prescribed_strataero_cycle_yr>1850</prescribed_strataero_cycle_yr>
+
+<history_aerosol>.true.</history_aerosol>
+<history_chemistry>.true.</history_chemistry>
+
+</namelist_defaults>

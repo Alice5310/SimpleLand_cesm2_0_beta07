@@ -1,0 +1,5 @@
+-spmd -smp
+-dyn eul
+-res 64x128
+-phys adiabatic
+-s

@@ -1,0 +1,7 @@
+use_init_interp = .true.
+reset_snow = .true.
+reseed_dead_plants = .true.
+ndep_varlist = 'NDEP_month'
+ndep_taxmode = 'cycle'
+stream_fldFileName_ndep = '$DIN_LOC_ROOT/lnd/clm2/ndepdata/fndep_clm_hist_simyr1850_0.9x1.25_CMIP6alpha01_c170330.nc'
+fsurdat = '$DIN_LOC_ROOT/lnd/clm2/surfdata_map/surfdata_0.9x1.25_78pfts_CMIP6_simyr1850_c170725.nc'

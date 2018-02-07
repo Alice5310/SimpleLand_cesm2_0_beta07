@@ -1,0 +1,707 @@
+<?xml version="1.0"?>
+<testlist version="2.0">
+
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                -->
+<!--              CAM scientifically supported COMPSETS                 -->
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                -->
+
+  <test compset="F2000_DEV" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam_short"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam_one"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam_short"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam_one"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="F2000_DEV" grid="f09_f09_mg17" name="SMS_Lm13" testmods="cam/outfrq1m">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <options>
+         <option name="walltime">03:00:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="F2000_DEV" grid="f09_f09_mg17" name="PFS">
+    <machines>
+      <machine name="cheyenne" compiler="pgi" category="prebeta"/>
+    </machines>
+  </test>
+
+  <test compset="FHIST_DEV" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam_short"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam_short"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="F1850_DONOTUSE" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam_short"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam_short"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@                 -->
+<!--              CAM test-supported COMPSETS                 -->
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@                 -->
+
+<!--              CAM Tests at non-scientific resolutions     -->
+  <test compset="F2000_DEV" grid="f19_f19_mg17" name="ERP_Ln9" testmods="cam/cosp">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="F2000_DEV" grid="f19_f19_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="gnu" category="prealpha"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="F2000_DEV" grid="ne30_ne30_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+
+<!--              CAM Aquaplanet COMPSETS                 -->
+
+  <test compset="QPC6" grid="f19_f19_mg17" name="ERP_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="QSC6" grid="f19_f19_mg17" name="ERP_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+
+<!--              CAM Simple Models                       -->
+
+  </test>
+  <test compset="FDABIP04" grid="T42z30_T42_mg17" name="ERP_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="hobart" compiler="nag" category="prealpha"/>
+    </machines>
+  </test>
+  <test compset="FHS94" grid="T42_T42_mg17" name="ERP_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="hobart" compiler="nag" category="prealpha"/>
+    </machines>
+  </test>
+  <test compset="FKESSLER" grid="f19_f19_mg17" name="ERP_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="hobart" compiler="nag" category="prealpha"/>
+    </machines>
+  </test>
+  <test compset="FSCM5A97" grid="T42_T42_mg17" name="SMS_D_Mmpi-serial_Ld1" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="hobart" compiler="nag" category="prealpha"/>
+    </machines>
+  </test>
+
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@                 -->
+<!--              CAM COMPSETS for testing only               -->
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@                 -->
+ 
+  <test compset="QPC4" grid="f19_f19_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="QPC5" grid="f19_f19_mg17" name="ERP_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="QSC4" grid="f19_f19_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="QSC5" grid="f19_f19_mg17" name="ERP_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+
+  <test compset="FC5L45BGC" grid="f19_f19_mg17" name="ERP_Ld5" testmods="cam/fire_emis">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_fire"/>
+    </machines>
+  </test>
+  <test compset="FC5L45BGC" grid="f19_f19_mg17" name="SMS_D_Ld1" testmods="cam/fire_emis">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_fire"/>
+    </machines>
+  </test>
+  <test compset="FC5L45BGC" grid="f45_f45_mg37" name="SMS_D_Ld1" testmods="cam/fire_emis">
+    <machines>
+      <machine name="hobart" compiler="nag" category="test_fire"/>
+      <machine name="hobart" compiler="pgi" category="test_fire"/>
+    </machines>
+  </test>
+  <test compset="FCSD" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="camchem"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FC2010climo" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="camchem"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FC2000climo" grid="f09_f09_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="camchem"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FC2000climo" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="camchem"/>
+    </machines>
+  </test>
+  <test compset="FCHIST" grid="f09_f09_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="camchem"/>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+    </machines>
+  </test>
+   <test compset="FSPCAMS" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="hobart" compiler="nag" category="test_spcam"/>
+      <machine name="hobart" compiler="pgi" category="test_spcam"/>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+    </machines>
+  </test>
+  <test compset="FSPCAMS" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_spcam"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FSPCAMM" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="test_spcam"/>
+      <options>
+         <option name="walltime">00:20:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FSPCAMCLBM" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="hobart" compiler="intel" category="test_spcam"/>
+    </machines>
+  </test>
+  <test compset="FSPCAMCLBS" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="hobart" compiler="intel" category="test_spcam"/>
+    </machines>
+  </test>
+
+<!--              @@@@@@@@@@@@@@@@@@@@@@                 -->
+<!--             WACCM COMPSETS                 -->
+<!--              @@@@@@@@@@@@@@@@@@@@@@                 -->
+
+  <test compset="FWSD" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FWSD" grid="f09_f09_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FMOZ" grid="f19_f19_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="camchem"/>
+      <machine name="cheyenne" compiler="intel" category="camchem"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FW2000" grid="f09_f09_mg17" name="SMS_Ld1" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="waccm"/>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FW1850" grid="f09_f09_mg17" name="SMS_Ld1" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="waccm"/>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FW1850" grid="f09_f09_mg17" name="SMS_Ld1" testmods="cam/reduced_hist1d">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FWHIST" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq1d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+      <options>
+         <option name="walltime">00:30:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FWHIST" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/reduced_hist1d">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+    </machines>
+  </test>
+  <test compset="FWHIST" grid="f09_f09_mg17" name="SMS_D_Ln9" testmods="cam/reduced_hist3s">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="waccm"/>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <options>
+         <option name="walltime">00:20:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FX2000climo" grid="f19_f19_mg16" name="SMS_D_Ln9"   testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccmx"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FX2000climo" grid="f19_f19_mg16" name="ERS_Ln9"   testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccmx"/>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FXHIST" grid="f19_f19_mg16" name="SMS_D_Ln9"   testmods="cam/outfrq9s">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="waccmx"/>
+      <machine name="cheyenne" compiler="intel" category="waccmx"/>
+    </machines>
+  </test>
+  <test compset="FXHIST" grid="f19_f19_mg16" name="ERS_Ld3"   testmods="cam/outfrq1d_newyear">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="waccmx"/>
+      <machine name="cheyenne" compiler="intel" category="waccmx"/>
+    </machines>
+  </test>
+  <test compset="FXHIST" grid="f19_f19_mg16" name="ERS_Ln9"   testmods="cam/outfrq9s">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="waccmx"/>
+    </machines>
+  </test>
+  <test compset="FXSD" grid="f19_f19_mg16" name="SMS_Ld1"   testmods="cam/outfrq1d">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="waccmx"/>
+      <machine name="cheyenne" compiler="intel" category="waccmx"/>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <options>
+         <option name="walltime">00:20:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FWmaHIST" grid="f09_f09_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FWmaHIST" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq3d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FWmaSD" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq3d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FWmadSD" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq3d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+    </machines>
+  </test>
+  <test compset="FWmaHIST" grid="f19_f19_mg17" name="ERP_Ld3" testmods="cam/outfrq3d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FWmaHIST" grid="f19_f19_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FWscHIST" grid="f09_f09_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="FWscHIST" grid="f09_f09_mg17" name="ERP_Ld3" testmods="cam/outfrq3d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FWscHIST" grid="f19_f19_mg17" name="ERP_Ld3" testmods="cam/outfrq3d">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="FWscHIST" grid="f19_f19_mg17" name="SMS_D_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="yellowstone" compiler="intel" category="waccm"/>
+    </machines>
+  </test>
+  <test compset="PC4" grid="f19_f19_mg17" name="SMS" testmods="cam/cam4_port">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="test_port"/>
+      <machine name="cheyenne" compiler="pgi" category="test_port"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="PC4" grid="f19_f19_mg17" name="SMS_D" testmods="cam/cam4_port">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prebeta"/>
+      <machine name="cheyenne" compiler="intel" category="test_port"/>
+    </machines>
+  </test>
+  <test compset="PC5" grid="f45_f45_mg37" name="SMS_D" testmods="cam/cam5_port_f45">
+    <machines>
+      <machine name="hobart" compiler="nag" category="prealpha"/>
+      <machine name="hobart" compiler="nag" category="test_port"/>
+    </machines>
+  </test>
+  <test compset="PC5" grid="ne30_ne30_mg17" name="SMS_D" testmods="cam/cam5_port_ne30">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="test_port"/>
+      <options>
+         <option name="walltime">00:10:00</option>
+      </options>
+    </machines>
+  </test>
+  <test compset="PC6" grid="f09_f09_mg17" name="SMS_Ld5" testmods="cam/cam6_port_f09">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="aux_cam"/>
+      <machine name="cheyenne" compiler="intel" category="prealpha"/>
+      <machine name="cheyenne" compiler="intel" category="test_port"/>
+      <options>
+         <option name="walltime">00:30:00</option>
+      </options>
+    </machines>
+  </test>
+
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                -->
+<!--                         Release tests                              -->
+<!--              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                -->
+  <test compset="FW2000" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FW1850" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FWHIST" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FC2000climo" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FC2010climo" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FCHIST" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FWmaHIST" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FWmadSD" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FWmaSD" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FWscHIST" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FWSD" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FCSD" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="F1850_DONOTUSE" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="F2000_DEV" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FSPCAMS" grid="f09_f09_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+    </machines>
+  </test>
+
+  <test compset="FSPCAMCLBS" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+      <machine name="cheyenne" compiler="intel" category="test_release3"/>
+    </machines>
+  </test>
+
+  <test compset="FSPCAMM" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+      <machine name="cheyenne" compiler="intel" category="test_release3"/>
+    </machines>
+  </test>
+
+  <test compset="FSPCAMCLBM" grid="f19_f19_mg17" name="ERS_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+      <machine name="cheyenne" compiler="intel" category="test_release3"/>
+    </machines>
+  </test>
+
+  <test compset="FHIST_DEV" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FMOZ" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FXHIST" grid="f19_f19_mg16" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+    </machines>
+  </test>
+
+  <test compset="FX2000climo" grid="f19_f19_mg16" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+    </machines>
+  </test>
+
+  <test compset="FXSD" grid="f19_f19_mg16" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+    </machines>
+  </test>
+
+  <test compset="FSCM5A97" grid="T42_T42_mg17" name="SMS_D_Mmpi-serial_Ld1" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release2"/>
+      <machine name="cheyenne" compiler="intel" category="test_release3"/>
+    </machines>
+  </test>
+
+  <test compset="FHS94" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FADIAB" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FDABIP04" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FC5L45BGC" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="QPC4" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="QPC5" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="QPC6" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="QSC4" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="QSC5" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="QSC6" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="PC4" grid="f19_f19_mg17" name="SMS" testmods="cam/cam4_port">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+      <machine name="cheyenne" compiler="intel" category="test_release3"/>
+    </machines>
+  </test>
+
+  <test compset="PC5" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="PC6" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+  <test compset="FKESSLER" grid="f09_f09_mg17" name="ERP_Ln9" testmods="cam/outfrq9s">
+    <machines>
+      <machine name="cheyenne" compiler="intel" category="test_release"/>
+    </machines>
+  </test>
+
+</testlist>

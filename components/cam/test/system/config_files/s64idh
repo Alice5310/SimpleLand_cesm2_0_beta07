@@ -1,0 +1,6 @@
+-spmd -smp
+-dyn sld
+-res 64x128
+-phys held_suarez
+-debug
+-s

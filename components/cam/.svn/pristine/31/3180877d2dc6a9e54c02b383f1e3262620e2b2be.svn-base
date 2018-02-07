@@ -1,0 +1,2 @@
+use_init_interp=.true.
+check_finidat_year_consistency = .false.

@@ -1,0 +1,9 @@
+#!/bin/csh
+
+set exenam=cam_chempp
+set objdir=OBJ
+
+rm -f ../bin/$exenam
+rm -f $objdir/*
+
+gmake USER_FC=pgf95 DEBUG=TRUE EXENAME=cam_chempp
